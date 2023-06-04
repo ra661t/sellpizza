@@ -14,8 +14,8 @@
 <hr>
 <div class="card w-75 mx-auto">
 <div class="card-body">
-<h4 class="card-title">Date: ${news.date }</h4>
-<p class="card-text">Title: ${news.title }</p>
+<h4 class="card-title">Date: ${guest.date }</h4>
+<p class="card-text">Title: ${guest.title }</p>
 </div>
 </div>
 <hr>
