@@ -15,10 +15,9 @@
 
 <hr>
 <ul class="list-group">
-<c:forEach var="news" items="$(newslist)" varStatus="status">
+<c:forEach var="guest" items="$(guestlist)" varStatus="status">
 <li class="list-group-item-action d-flex justify-content-between align-items-center">
-<a href="news.nhn?action=getNews&aid=${ news.aid}" class="text-decoration-none">[${status.count }]${news.title }, ${news.date }</a>
-<a href="news.nhn?action=delteNews&aid=${ news.aid}"><span class="badge bg-secondary">&times;</span></a>
+
 </li>
 </c:forEach>
 </ul>
@@ -29,7 +28,7 @@
 <button type = "button" class="btn-close" data-bs-dismiss="alert"></button>
 </div>
 </c:if>
-<button class="btn btn-outline-info mb-3" type="button" data-bs-toggle="collapse" data-bs-target ="#addForm" aria-expanded="false" aria-controls="addForm">뉴스 등록</button>
+<button class="btn btn-outline-info mb-3" type="button" data-bs-toggle="collapse" data-bs-target ="#addForm" aria-expanded="false" aria-controls="addForm">방명록 등록</button>
 <div class="collapse" id="addForm">
 <div class="card card-body">
 <form method = "post" action="/jwbook/news.nhn?action=addNews" enctype="multipart/form-data">
